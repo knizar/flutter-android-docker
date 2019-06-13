@@ -14,7 +14,7 @@ RUN apt-get -qq update && \
   RUN yes | sdk/tools/bin/sdkmanager --licenses && yes | sdk/tools/bin/sdkmanager --update
 
 
-ENV FLUTTER_VERSION v1.2.1
+ENV FLUTTER_VERSION v1.2.1-stable
 
 WORKDIR /
 
