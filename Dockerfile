@@ -24,3 +24,4 @@ ENV PATH $PATH:/flutter/bin/cache/dart-sdk/bin:/flutter/bin
 
 RUN yes | flutter doctor --android-licenses
 RUN flutter doctor
+RUN flutter upgrade
