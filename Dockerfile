@@ -11,7 +11,7 @@ RUN apt-get -qq update && \
   apt-get install -qqy --no-install-recommends \
   xz-utils \
   && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \
-  RUN yes | sdkmanager --licenses && yes | sdkmanager --update
+  RUN yes | sdk/tools/bin/sdkmanager --licenses && yes | sdk/tools/bin/sdkmanager --update
 
 
 ENV FLUTTER_VERSION v1.2.1
